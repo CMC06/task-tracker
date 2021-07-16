@@ -1,38 +1,82 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #414040;
+  color: #16eeeb;
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #414040;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #16eeeb;
+  max-width: 2000px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-btn{
+  justify-content: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3);
+  color:#16eeeb;
+  border: solid;
+  border-color: #000;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+.taskList {
+  max-width: 75%;
+  border: solid;
+  border-color: #16eeea93;
+  margin: auto;
+}
+
+.task {
+  background:rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.task-important {
+  border-left: 10px solid #16eeea93;
+}
+
+.task:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.add-task {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 75%;
+    border: solid;
+    border-color: #16eeea93;
+    margin: auto;
+    font-size: calc(10px + 2vmin);
+}
+
+.input {
+  background:rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  justify-content: space-between;
+  min-width: 80%;
+  color: #16eeeaa9;
+  border: none;
 }
