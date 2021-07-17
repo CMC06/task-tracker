@@ -3,7 +3,7 @@ import Button from "./Button";
 
 
 
-const Header = ({ showAdd, showComp }) => {
+const Header = ({ showAdd, showComp, showingComp, showingAdd }) => {
 
   
   return (
@@ -12,8 +12,8 @@ const Header = ({ showAdd, showComp }) => {
         Task Tracker Application
       </h1>
       <div className='header-btn'>
-      <Button onClick={showAdd} buttonTxt='Add Task'/>
-      <Button onClick={showComp} buttonTxt='Show Completed' />
+      <Button onClick={showAdd} buttonTxt={showingAdd ? 'Hide Add' : 'Add Task'}/>
+      <Button onClick={showComp} buttonTxt={showingComp ? 'Hide Completed' : 'Show Completed'} />
       </div>
     </header>
   )

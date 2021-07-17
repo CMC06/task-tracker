@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header showAdd={() => setShowAddTask(!showAddTask)} showComp={() => setShowCompleted(!showCompleted)}/>
+      <Header showAdd={() => setShowAddTask(!showAddTask)} showComp={() => setShowCompleted(!showCompleted)} showingComp={showCompleted} showingAdd={showAddTask}/>
       {showAddTask && <AddTask onAdd={addTask}/>}
       <div className="taskList">
         {tasks.length > 0 ? <TaskList tasks={tasks} onDelete={deleteTask} setImportant={setImportant}/> : <h2>All Tasks Completed!</h2>}
