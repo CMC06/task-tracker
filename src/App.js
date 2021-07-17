@@ -8,7 +8,7 @@ import CompletedList from './Components/CompletedList';
 
 function App() {
 
-  const [tasks, setTasks] = useState([{text: 'Brush teeth', completed: false, id: 1, important: false}, {text: 'Pick up groceries', completed: false, id: 2, important: false}, {text: 'Take cat to vet', completed: false, id: 3, important: false}]);
+  const [tasks, setTasks] = useState([{text: 'Wash and fold laundry', completed: false, id: 1, important: false}, {text: 'Pick up groceries', completed: false, id: 2, important: false}, {text: 'Make something for dinner', completed: false, id: 3, important: false}]);
   const [completedTasks, setCompletedTasks] = useState([]);
   const [showCompleted, setShowCompleted] = useState(false);
   const [showAddTask, setShowAddTask] = useState(false);
@@ -34,8 +34,8 @@ function App() {
     const newTask = {...task, id, completed: false, important: false};
     setTasks([...tasks, newTask]);
   }
-  
-  
+
+    
 
   return (
     <div className="App">
@@ -46,7 +46,7 @@ function App() {
         
       </div>
       <div className="taskList">
-        {completedTasks.length > 0 && showCompleted ? <CompletedList completed={completedTasks} /> : ''} 
+        {completedTasks.length > 0 && showCompleted ? <CompletedList completed={completedTasks}  /> : ''} 
       </div>
     
     </div>

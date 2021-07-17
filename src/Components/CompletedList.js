@@ -6,7 +6,7 @@ const CompletedList = ({ completed }) => {
     <h2>
       Completed Tasks:
     </h2>
-      {completed.map((task) => (<CompletedTask key={task.id} completed={completed} task={task}/>))}
+      {completed.map((task) => (<CompletedTask key={task.id} completed={completed} task={task} />))}
     </div>
   )
 }
