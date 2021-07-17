@@ -11,7 +11,7 @@ function App() {
   const [tasks, setTasks] = useState([{text: 'Wash and fold laundry', completed: false, id: 1, important: false}, {text: 'Pick up groceries', completed: false, id: 2, important: false}, {text: 'Make something for dinner', completed: false, id: 3, important: false}]);
   const [completedTasks, setCompletedTasks] = useState([]);
   const [showCompleted, setShowCompleted] = useState(false);
-  const [showAddTask, setShowAddTask] = useState(false);
+  const [showAddTask, setShowAddTask] = useState(true);
 
   //Delete task function (within UI)
   const deleteTask = (id) => {
