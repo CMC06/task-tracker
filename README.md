@@ -1,5 +1,5 @@
 # Task-Tracker
-This program renders a map with animation that tracks Boston public transit buses based on their publicly available location information. It was created as part of an academic project for an MIT online certificate program. 
+This is a task tracking program written with React components that allows a user to add tasks, mark tasks as completed, and show or hide completed tasks. 
 
 ## How to Run
 This program runs in the web browser and is compatible with mobile phones.
